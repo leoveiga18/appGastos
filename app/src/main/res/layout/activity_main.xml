@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.appgastos.MainActivity">
+
+    <EditText
+        android:id="@+id/editTextDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite a distância"
+        android:inputType="numberDecimal"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/textViewTotalKM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Total de KM: "
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextPreco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o preço"
+        android:inputType="numberDecimal"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/textViewPreco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Preço: "
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextAutonomia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite a autonomia"
+        android:inputType="numberDecimal"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/textViewAutonomia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Autonomia: "
+        android:textSize="18sp"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/textViewGasto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Seu gasto será de: "
+        android:textSize="30sp"
+        android:layout_marginBottom="80dp" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_purple_background"
+        android:text="Calcular"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonCalculator"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_green_background"
+            android:text="Calculadora"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            />
+
+        <Button
+            android:id="@+id/buttonMap"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_blue_background"
+            android:text="Mapa"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:onClick="openMaps" />
+
+    </LinearLayout>
+
+</LinearLayout>
